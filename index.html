@@ -8,7 +8,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
-
+ 
 :root {
   --font:'IBM Plex Sans Thai',sans-serif;
   --mono:'IBM Plex Mono',monospace;
@@ -42,7 +42,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 ::-webkit-scrollbar{width:5px;height:5px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--bg5);border-radius:3px}
-
+ 
 /* ── TOPBAR ── */
 .topbar{height:52px;background:var(--bg2);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 20px;gap:12px;position:sticky;top:0;z-index:100}
 .brand-mark{width:28px;height:28px;background:var(--blue);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -59,7 +59,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .icon-btn svg{width:14px;height:14px}
 .icon-btn.danger{color:var(--red-lt);border-color:var(--err-bd)}
 .icon-btn.danger:hover{background:var(--err-bg);border-color:var(--red-lt)}
-
+ 
 /* ── METHOD BAR ── */
 .method-bar{height:40px;background:var(--bg2);border-bottom:1px solid var(--border);display:none;align-items:center;padding:0 20px;gap:14px}
 .mlabel{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);white-space:nowrap}
@@ -73,7 +73,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .btn-sm svg{width:12px;height:12px}
 .btn-sm.primary{background:var(--blue);border-color:var(--blue);color:#fff}
 .btn-sm.primary:hover{background:var(--blue-lt);border-color:var(--blue-lt);box-shadow:0 2px 8px rgba(59,130,246,.35)}
-
+ 
 /* ── NAVBAR ── */
 .navbar{background:var(--bg2);border-bottom:1px solid var(--border);display:none;padding:0 20px;position:sticky;top:52px;z-index:99;justify-content:flex-start;gap:0}
 .ntab{display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:0 18px;height:42px;font-size:12px;font-weight:500;color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;transition:all .18s ease;user-select:none;white-space:nowrap;border-radius:0;letter-spacing:.01em}
@@ -82,20 +82,20 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .ntab.on{color:var(--blue-lt);border-bottom-color:var(--blue-lt);background:rgba(59,130,246,.05)}
 [data-theme="light"] .ntab.on{color:var(--blue);border-bottom-color:var(--blue);background:rgba(37,99,235,.05)}
 .nbadge{background:var(--red-lt);color:#fff;font-size:9px;font-weight:700;padding:1px 5px;border-radius:8px;font-family:var(--mono);min-width:18px;text-align:center}
-
+ 
 /* ── MAIN ── */
 .main{padding:20px;max-width:1600px;margin:0 auto}
 .page{display:none;animation:fi .25s ease}
 .page.on{display:block}
 @keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-
+ 
 /* ── CARDS ── */
 .card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;transition:box-shadow .2s}
 .card:hover{box-shadow:0 2px 12px var(--shadow)}
 .card-hdr{padding:12px 16px;border-bottom:1px solid var(--border2);display:flex;align-items:center;justify-content:space-between;gap:8px}
 .card-title{font-size:13px;font-weight:600;letter-spacing:-.01em}
 .card-body{padding:16px}
-
+ 
 /* ── UPLOAD ── */
 .up-page{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:calc(100vh - 136px);gap:28px;padding:40px 20px}
 .up-heading{text-align:center}
@@ -131,13 +131,13 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .run-btn:active{transform:translateY(0)}
 .run-btn:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none}
 .run-btn svg{width:15px;height:15px}
-
+ 
 /* ── SECTION HEADER ── */
 .sec-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:12px;flex-wrap:wrap}
 .sec-title{font-size:14px;font-weight:700}
 .sec-sub{font-size:11px;color:var(--text3);margin-top:1px}
 .hdr-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-
+ 
 /* ── KPI ── */
 .kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-bottom:18px}
 .kpi{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r-lg);padding:16px 14px;position:relative;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease;cursor:default}
@@ -146,10 +146,10 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .kpi-lbl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px}
 .kpi-val{font-size:21px;font-weight:700;font-family:var(--mono);line-height:1;letter-spacing:-.5px}
 .kpi-sub{font-size:11px;color:var(--text3);margin-top:5px;line-height:1.4}
-
+ 
 /* ── CHARTS ── */
 .chart-grid{display:grid;grid-template-columns:240px 1fr 1fr;gap:14px;margin-bottom:18px}
-
+ 
 /* ── FILTERS ── */
 .frow{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r-lg);padding:10px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
 .flabel{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;color:var(--text3);white-space:nowrap}
@@ -163,7 +163,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .tog-t.on::after{left:calc(100% - 14px);background:#fff}
 .btn-link{background:none;border:none;color:var(--text3);font-size:11px;font-family:var(--font);cursor:pointer;padding:5px 9px;border-radius:var(--r);transition:all .15s}
 .btn-link:hover{color:var(--text2);background:var(--bg3)}
-
+ 
 /* ── TABLE ── */
 .twrap{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden}
 .ttop{padding:10px 14px;border-bottom:1px solid var(--border2);display:flex;align-items:center;justify-content:space-between;gap:8px}
@@ -183,7 +183,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .num{font-family:var(--mono);font-size:11px;text-align:right;white-space:nowrap}
 .mono-s{font-family:var(--mono);font-size:11px}
 .dp{color:var(--red-lt)} .dn{color:var(--blue-lt)}
-
+ 
 /* ── CHIPS ── */
 .chip{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;letter-spacing:.2px;white-space:nowrap}
 .c-ok{background:var(--ok-bg);color:var(--green-lt);border:1px solid var(--ok-bd)}
@@ -193,14 +193,14 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .c-up{background:var(--err-bg);color:var(--red-lt);border:1px solid var(--err-bd)}
 .c-dn{background:rgba(59,130,246,.08);color:var(--blue-lt);border:1px solid rgba(59,130,246,.2)}
 .c-dup{background:rgba(124,58,237,.1);color:#A78BFA;border:1px solid rgba(124,58,237,.25)}
-
+ 
 /* ── PAGINATION ── */
 .pg{display:flex;align-items:center;justify-content:center;gap:4px;padding:10px 12px;border-top:1px solid var(--border2)}
 .pg-btn{width:26px;height:26px;border-radius:var(--r-sm);border:1px solid var(--border);background:transparent;color:var(--text2);font-size:11px;font-family:var(--mono);cursor:pointer;transition:all .15s}
 .pg-btn:hover:not(:disabled){background:var(--bg3);color:var(--text)}
 .pg-btn.on{background:var(--blue);border-color:var(--blue);color:#fff}
 .pg-btn:disabled{opacity:.3;cursor:not-allowed}
-
+ 
 /* ── DETAIL ── */
 .det-nav{display:flex;align-items:center;gap:8px;margin-bottom:16px;flex-wrap:wrap}
 .det-grid{display:grid;grid-template-columns:360px 1fr;gap:16px}
@@ -227,17 +227,17 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .tl-needle{position:absolute;top:-3px;width:3px;height:13px;background:var(--amber-lt);border-radius:2px;transform:translateX(-50%)}
 .tl-needle::after{content:attr(data-label);position:absolute;top:16px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--amber-lt);white-space:nowrap;font-family:var(--mono)}
 .tl-labels{display:flex;justify-content:space-between;font-size:10px;color:var(--text3);font-family:var(--mono)}
-
+ 
 /* ── SUMMARY ── */
 .ibar-bg{height:4px;width:60px;background:var(--bg4);border-radius:2px;display:inline-block;vertical-align:middle;margin-left:5px;overflow:hidden}
 .ibar-fill{height:100%;border-radius:2px;background:var(--red-lt)}
-
+ 
 /* ── QUALITY ── */
 .dq-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px;margin-bottom:14px}
 .dq-stat{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:11px 13px;display:flex;align-items:center;gap:10px}
 .dq-val{font-size:20px;font-weight:700;font-family:var(--mono)}
 .dq-lbl{font-size:11px;color:var(--text3);line-height:1.3}
-
+ 
 /* ── SETTINGS DRAWER ── */
 .ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;backdrop-filter:blur(2px)}
 .ov.on{display:block}
@@ -260,14 +260,14 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .btn-full.blue:hover{background:var(--blue-lt)}
 .btn-full.danger{background:transparent;border:1px solid var(--err-bd);color:var(--red-lt)}
 .btn-full.danger:hover{background:var(--err-bg)}
-
+ 
 /* ── ALERTS ── */
 .alert{padding:10px 12px;border-radius:var(--r);font-size:12px;font-weight:500;display:flex;align-items:flex-start;gap:9px;margin-bottom:14px}
 .alert svg{width:13px;height:13px;flex-shrink:0;margin-top:1px}
 .alert.ok{background:var(--ok-bg);border:1px solid var(--ok-bd);color:var(--green-lt)}
 .alert.err{background:var(--err-bg);border:1px solid var(--err-bd);color:var(--red-lt)}
 .alert.warn{background:var(--warn-bg);border:1px solid var(--warn-bd);color:var(--amber-lt)}
-
+ 
 /* ── TOAST ── */
 .toast-wrap{position:fixed;bottom:18px;right:18px;z-index:500;display:flex;flex-direction:column;gap:5px}
 .toast{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:9px 13px;font-size:12px;display:flex;align-items:center;gap:9px;max-width:290px;box-shadow:0 6px 20px var(--shadow);animation:ti .22s ease}
@@ -275,14 +275,14 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .toast.out{animation:to .22s ease forwards}
 @keyframes to{to{transform:translateX(110%);opacity:0}}
 .tdot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
-
+ 
 /* ── AUDIT ── */
 .audit-line{padding:4px 0;border-bottom:1px solid var(--border2);font-size:11px;color:var(--text2);line-height:1.5}
-
+ 
 /* ── EMPTY ── */
 .empty{text-align:center;padding:44px 20px;color:var(--text3)}
 .empty h3{font-size:14px;color:var(--text2);margin-bottom:5px}
-
+ 
 /* ── PRINT ── */
 @media print{
   .topbar,.method-bar,.navbar,.frow,.drawer,.ov,.toast-wrap,
@@ -304,7 +304,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
   a{text-decoration:none}
   @page{margin:12mm}
 }
-
+ 
 @media(max-width:900px){
   .chart-grid{grid-template-columns:1fr 1fr}
   .det-grid{grid-template-columns:1fr}
@@ -316,7 +316,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 </style>
 </head>
 <body>
-
+ 
 <!-- ══ TOP BAR ══ -->
 <header class="topbar">
   <div class="brand-mark">
@@ -342,7 +342,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
   </button>
 </header>
-
+ 
 <!-- ══ METHOD BAR ══ -->
 <div class="method-bar" id="methodBar">
   <span class="mlabel">วิธีคำนวณ:</span>
@@ -356,7 +356,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
     คำนวณใหม่
   </button>
 </div>
-
+ 
 <!-- ══ NAVBAR ══ -->
 <nav class="navbar" id="navbar">
   <span class="ntab on" id="nDash"    onclick="goto('dash')">ภาพรวม</span>
@@ -365,10 +365,10 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
   <span class="ntab"    id="nDet"     onclick="goto('det')">รายละเอียด</span>
   <span class="ntab"    id="nQual"    onclick="goto('qual')">คุณภาพข้อมูล</span>
 </nav>
-
+ 
 <!-- ══ MAIN ══ -->
 <div class="main" id="mainWrap">
-
+ 
 <!-- ─ UPLOAD ─ -->
 <div class="up-page" id="pageUp">
   <div class="up-heading">
@@ -434,7 +434,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
   </button>
   <p style="font-size:11px;color:var(--text3)">ข้อมูลทั้งหมดประมวลผลภายใน Browser — ไม่มีการส่งข้อมูลออกไปภายนอก</p>
 </div>
-
+ 
 <!-- ─ DASHBOARD ─ -->
 <div class="page" id="pageDash">
   <div id="alertWrap"></div>
@@ -446,7 +446,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
   </div>
   <div class="card"><div class="card-hdr"><span class="card-title">Audit Trail</span><span class="tb-meta" id="auditTs"></span></div><div class="card-body" id="auditBody"></div></div>
 </div>
-
+ 
 <!-- ─ ERRORS ─ -->
 <div class="page" id="pageErr">
   <div class="sec-hdr">
@@ -496,7 +496,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
     <div class="pg" id="errPg"></div>
   </div>
 </div>
-
+ 
 <!-- ─ SUMMARY ─ -->
 <div class="page" id="pageSum">
   <div class="sec-hdr">
@@ -519,7 +519,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
     </table>
   </div></div>
 </div>
-
+ 
 <!-- ─ DETAIL ─ -->
 <div class="page" id="pageDet">
   <div class="det-nav">
@@ -536,7 +536,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
   </div>
   <div id="detContent"><div class="empty"><h3>ใส่คำค้นแล้วกด Enter หรือคลิกแถวในหน้ารายการผิดพลาด</h3></div></div>
 </div>
-
+ 
 <!-- ─ QUALITY ─ -->
 <div class="page" id="pageQual">
   <div class="sec-hdr">
@@ -570,9 +570,9 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
     </div>
   </div>
 </div>
-
+ 
 </div><!-- /main -->
-
+ 
 <!-- ══ SETTINGS DRAWER ══ -->
 <div class="ov" id="drOv" onclick="closeDrawer()"></div>
 <div class="drawer" id="drawer">
@@ -609,10 +609,10 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
     <button class="btn-full danger" onclick="clearData()">ล้างข้อมูลทั้งหมด</button>
   </div>
 </div>
-
+ 
 <!-- ══ TOASTS ══ -->
 <div class="toast-wrap" id="toastWrap"></div>
-
+ 
 <script>
 /* ═══════════════════════════════════════════════
    STATE
@@ -633,12 +633,12 @@ const S = {
   currentPage: 'dash',
   chartsDirty: false,
 };
-
+ 
 /* ═══════════════════════════════════════════════
    DATE
 ═══════════════════════════════════════════════ */
 const MTH = ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
-
+ 
 function s2d(serial) {
   if (!serial || serial < 1) return null;
   // Excel leap-year bug: serial 60 = fake 29 Feb 1900, shift all dates after
@@ -657,7 +657,7 @@ function dTH(d) { if (!d) return '–'; return `${d.getDate()} ${MTH[d.getMonth(
 function dCE(d) { if (!d) return '–'; return `${String(d.getDate()).padStart(2,'0')}/${String(d.getMonth()+1).padStart(2,'0')}/${d.getFullYear()}`; }
 function s2TH(s) { return dTH(s2d(s)); }
 function s2CE(s) { return dCE(s2d(s)); }
-
+ 
 /* ═══════════════════════════════════════════════
    MATH: TRUNCATE (not round) at 2dp — ตัดทศนิยม ไม่ปัดเศษ
    วิธี: round ที่ 6 ตำแหน่งก่อน เพื่อขจัด float64 noise
@@ -677,7 +677,7 @@ function t2(x) {
   const cut     = str.slice(0, dot + 3);        // "7655452.47"
   return sign * parseFloat(cut);
 }
-
+ 
 /* ─────────────────────────────────────────────
    calcExpiryAndDays:
    - วันสิ้นอายุ = วันได้มา + lifeYears ปีเป๊ะ ลบ 1 วัน
@@ -689,26 +689,26 @@ function t2(x) {
 function calcExpiryAndDays(acqDateSerial, lifeYears) {
   const acqDate = s2d(acqDateSerial);
   if (!acqDate) return { expirySerial: acqDateSerial + lifeYears*365, svcDays: lifeYears*365 };
-
+ 
   // expRaw = วันแรกที่พ้นอายุ (acqDate + lifeYears ปีเป๊ะ)
   const expRaw = new Date(Date.UTC(
     acqDate.getUTCFullYear() + lifeYears,
     acqDate.getUTCMonth(),
     acqDate.getUTCDate()
   ));
-
+ 
   // วันสิ้นอายุ (วันสุดท้ายที่ยังใช้ได้) = expRaw − 1 วัน
   const expiry = new Date(expRaw.getTime() - 86400000);
   const expirySerial = d2s(expiry);
-
+ 
   // svcDays = จำนวนวันจริงระหว่าง acqDate → expRaw (exclusive)
   // = นับรวมปีอธิกสุรทินทุกปีที่ผ่านในช่วงนั้น
   const acqUTC = Date.UTC(acqDate.getUTCFullYear(), acqDate.getUTCMonth(), acqDate.getUTCDate());
   const svcDays = Math.round((expRaw.getTime() - acqUTC) / 86400000);
-
+ 
   return { expirySerial, svcDays };
 }
-
+ 
 /* ─────────────────────────────────────────────
    realDaysBetween: นับวันจริงระหว่าง serial A → serial B
    ใช้ JS Date UTC เพื่อหลีกเลี่ยง DST และ Excel leap bug
@@ -721,7 +721,7 @@ function realDaysBetween(serialFrom, serialTo) {
   const toUTC   = Date.UTC(dTo.getUTCFullYear(),   dTo.getUTCMonth(),   dTo.getUTCDate());
   return Math.round((toUTC - fromUTC) / 86400000);
 }
-
+ 
 /* ═══════════════════════════════════════════════
    CALC
 ═══════════════════════════════════════════════ */
@@ -738,16 +738,16 @@ function calc(asset) {
              calcDepre:null, dailyRate:null, daysElapsed:null, serviceDays:null,
              expirySerial:null, isExpired:false, pctElapsed:null };
   }
-
+ 
   // ─── คำนวณวันสิ้นอายุและจำนวนวันด้วย date arithmetic ───
   const { expirySerial, svcDays } = calcExpiryAndDays(acqS, lyrs);
   // isExpired: วันรายงาน > วันสิ้นอายุ
   const isExp = S.cfg.reportSerial > expirySerial;
   // daysElapsed: นับวันจริง inclusive วันแรก (acqDate ถึง reportDate รวมทั้งสองวัน)
   const days  = Math.max(0, realDaysBetween(acqS, S.cfg.reportSerial) + 1);
-
+ 
   let dailyRate, calcDepre;
-
+ 
   if (S.method === 1) {
     dailyRate = t2(cost / svcDays);
     calcDepre = isExp ? (cost - 1) : t2(dailyRate * days);
@@ -757,73 +757,109 @@ function calc(asset) {
     dailyRate = t2((cost - 1) / svcDays);
     calcDepre = isExp ? (cost - 1) : Math.min(t2(dailyRate * days), cost - 1);
   }
-
+ 
   const sys    = asset.sysDepre || 0;
   const diff   = t2(calcDepre - sys);
   const adjAbs = Math.abs(diff);
   const passed = adjAbs <= S.cfg.tolerance;
-
+ 
   return { skip:false, skipReason:null, calcDepre, dailyRate, daysElapsed:days,
            serviceDays:svcDays, expirySerial, isExpired:isExp,
            diff, adjAbs, passed, pctElapsed: Math.min(days/svcDays, 1) };
 }
-
+ 
 /* ═══════════════════════════════════════════════
    PARSE
 ═══════════════════════════════════════════════ */
 function parseRows(rows) {
+  // ── Step 1: หา header row (scan 10 แถวแรก) ──
   let hi = -1;
-  for (let i = 0; i < Math.min(rows.length,6); i++) {
+  for (let i = 0; i < Math.min(rows.length, 10); i++) {
     const j = rows[i].map(c=>String(c).toLowerCase()).join('|');
-    if (j.includes('acquisition') || j.includes('asset number') || j.includes('fixed asset')) { hi=i; break; }
+    if (j.includes('acquisition') || j.includes('asset number') || j.includes('fixed asset')) {
+      hi = i; break;
+    }
   }
-  if (hi<0) hi = rows.length>2 ? 1 : 0;
-
-  const H = rows[hi].map(h=>String(h).toLowerCase().replace(/[\s\n\r()\-\/]/g,''));
-  const col = (...kws) => { for(const k of kws){ const i=H.findIndex(h=>h.includes(k)); if(i>=0)return i; } return -1; };
-
-  const cG  = col('fixedassetgroup','assetgroup','group')  >= 0 ? col('fixedassetgroup','assetgroup','group')  : 0;
-  const cN  = col('assetnumber','fixedassetno','assetno')  >= 0 ? col('assetnumber','fixedassetno','assetno')  : 1;
-  const cNm = col('name')                                  >= 0 ? col('name')                                  : 2;
-  const cLo = col('location')                              >= 0 ? col('location')                              : 3;
-  const cRf = col('reference')                             >= 0 ? col('reference')                             : 4;
-  const cVM = col('valuemodel','value')                    >= 0 ? col('valuemodel','value')                    : 5;
-  const cAD = col('acquisitiondate','acqdate')             >= 0 ? col('acquisitiondate','acqdate')             : 6;
-  const cAP = col('acquisitionprice','acqprice')           >= 0 ? col('acquisitionprice','acqprice')           : 7;
-  const cAJ = col('acquisitionadjustment','acqadj')        >= 0 ? col('acquisitionadjustment','acqadj')        : 8;
-  const cWU = col('writeup','writedown','writeupdow')      >= 0 ? col('writeup','writedown','writeupdow')      : 9;
-  const cRV = col('revaluation')                           >= 0 ? col('revaluation')                           : 10;
-  const cLf = col('servicelife','life')                    >= 0 ? col('servicelife','life')                    : 11;
-  const cCF = col('cf','accumlatedcf','accumulatedc')      >= 0 ? col('cf','accumlatedcf','accumulatedc')      : 15;
-  const cNB = col('netbookvalue','netbook','nbv')          >= 0 ? col('netbookvalue','netbook','nbv')          : 19;
-
+  if (hi < 0) hi = rows.length > 2 ? 1 : 0;
+ 
+  const headerRow = rows[hi];
+ 
+  // ── Step 2: หา offset — คอลัมน์แรกที่ไม่ว่างใน header row ──
+  // เช่น ถ้าตารางเริ่มที่คอลัมน์ S (index 18) offset = 18
+  let offset = 0;
+  for (let i = 0; i < headerRow.length; i++) {
+    if (headerRow[i] !== '' && headerRow[i] !== null && headerRow[i] !== undefined) {
+      offset = i;
+      break;
+    }
+  }
+ 
+  const H = headerRow.map(h => String(h).toLowerCase().replace(/[\s\n\r()\-\/]/g, ''));
+  const col = (...kws) => {
+    for (const k of kws) {
+      const i = H.findIndex(h => h.includes(k));
+      if (i >= 0) return i;
+    }
+    return -1;
+  };
+ 
+  // ── Step 3: map คอลัมน์ — keyword match ก่อน, fallback ใช้ offset + positional ──
+  // positional ตามสเปค: group=0, num=1, name=2, loc=3, ref=4, vm=5,
+  //                     acqDate=6, acqPrice=7, acqAdj=8, wud=9, rev=10,
+  //                     life=11, accumBF=12, period=13, adj2=14, accumCF=15, nbv=19
+  const p = (n) => offset + n;  // positional with offset
+ 
+  const cG  = col('fixedassetgroup','assetgroup','group')   >= 0 ? col('fixedassetgroup','assetgroup','group')   : p(0);
+  const cN  = col('assetnumber','fixedassetno','assetno')   >= 0 ? col('assetnumber','fixedassetno','assetno')   : p(1);
+  const cNm = col('name')                                   >= 0 ? col('name')                                   : p(2);
+  const cLo = col('location')                               >= 0 ? col('location')                               : p(3);
+  const cRf = col('reference')                              >= 0 ? col('reference')                              : p(4);
+  const cVM = col('valuemodel','value model')               >= 0 ? col('valuemodel','value model')               : p(5);
+  const cAD = col('acquisitiondate','acqdate')              >= 0 ? col('acquisitiondate','acqdate')              : p(6);
+  const cAP = col('acquisitionprice','acqprice')            >= 0 ? col('acquisitionprice','acqprice')            : p(7);
+  const cAJ = col('acquisitionadjustment','acqadj')         >= 0 ? col('acquisitionadjustment','acqadj')         : p(8);
+  const cWU = col('writeup','writedown','writeupdow')       >= 0 ? col('writeup','writedown','writeupdow')       : p(9);
+  const cRV = col('revaluation')                            >= 0 ? col('revaluation')                            : p(10);
+  const cLf = col('servicelife','life')                     >= 0 ? col('servicelife','life')                     : p(11);
+  const cCF = col('cf','accumlatedcf','accumulatedc')       >= 0 ? col('cf','accumlatedcf','accumulatedc')       : p(15);
+  const cNB = col('netbookvalue','netbook','nbv')           >= 0 ? col('netbookvalue','netbook','nbv')           : p(19);
+ 
   const seen = {};
-  return rows.slice(hi+1).filter(r=>r&&!r.every(c=>c===''||c===null||c===undefined)).map(r=>{
-    const assetNum = String(r[cN]||'').trim();
-    if (!assetNum) return null;
-    // ── กรองแถว Sub total / subtotal ออกทุกกรณี ──
-    if (/^sub[\s_-]?total/i.test(assetNum) || /^sub[\s_-]?total/i.test(String(r[cNm]||''))) return null;
-    const dup = !!seen[assetNum]; seen[assetNum]=(seen[assetNum]||0)+1;
-    const acqPrice = parseFloat(r[cAP])||0;
-    const acqAdj   = parseFloat(r[cAJ])||0;
-    const wud      = parseFloat(r[cWU])||0;
-    const rev      = parseFloat(r[cRV])||0;
-    const cost     = acqPrice + acqAdj + wud + rev;
-    const adS      = typeof r[cAD]==='number' ? r[cAD] : parseFloat(r[cAD])||0;
-    return {
-      assetNum, name:String(r[cNm]||'').trim(), group:String(r[cG]||'').trim(),
-      location:String(r[cLo]||'').trim(), reference:String(r[cRf]||'').trim(),
-      valueModel:String(r[cVM]||'').trim(),
-      acqDateSerial:adS, acqDate:s2d(adS),
-      acqPrice, acqAdj, wud, rev, cost,
-      serviceLifeYears:parseFloat(r[cLf])||0,
-      sysDepre:parseFloat(r[cCF])||0,
-      nbv:parseFloat(r[cNB])||0,
-      isDup:dup,
-    };
-  }).filter(Boolean);
+  return rows.slice(hi + 1)
+    .filter(r => r && !r.every(c => c === '' || c === null || c === undefined))
+    .map(r => {
+      const assetNum = String(r[cN] || '').trim();
+      if (!assetNum) return null;
+      // กรองแถว Sub total ออก
+      if (/^sub[\s_-]?total/i.test(assetNum) || /^sub[\s_-]?total/i.test(String(r[cNm] || ''))) return null;
+ 
+      const dup      = !!seen[assetNum]; seen[assetNum] = (seen[assetNum] || 0) + 1;
+      const acqPrice = parseFloat(r[cAP]) || 0;
+      const acqAdj   = parseFloat(r[cAJ]) || 0;
+      const wud      = parseFloat(r[cWU]) || 0;
+      const rev      = parseFloat(r[cRV]) || 0;
+      const cost     = acqPrice + acqAdj + wud + rev;
+      const adS      = typeof r[cAD] === 'number' ? r[cAD] : parseFloat(r[cAD]) || 0;
+ 
+      return {
+        assetNum,
+        name:            String(r[cNm] || '').trim(),
+        group:           String(r[cG]  || '').trim(),
+        location:        String(r[cLo] || '').trim(),
+        reference:       String(r[cRf] || '').trim(),
+        valueModel:      String(r[cVM] || '').trim(),
+        acqDateSerial:   adS,
+        acqDate:         s2d(adS),
+        acqPrice, acqAdj, wud, rev, cost,
+        serviceLifeYears: parseFloat(r[cLf]) || 0,
+        sysDepre:         parseFloat(r[cCF]) || 0,
+        nbv:              parseFloat(r[cNB]) || 0,
+        isDup: dup,
+        _colOffset: offset,  // เก็บไว้ debug
+      };
+    }).filter(Boolean);
 }
-
+ 
 /* ═══════════════════════════════════════════════
    FILE UPLOAD
 ═══════════════════════════════════════════════ */
@@ -831,7 +867,7 @@ function dOver(e,id){ e.preventDefault(); document.getElementById(id).classList.
 function dLeave(id){ document.getElementById(id).classList.remove('dv'); }
 function dDrop(e){ e.preventDefault(); dLeave('zone1'); const f=e.dataTransfer.files[0]; if(f)readXL(f); }
 function handleFile(inp){ if(inp.files[0])readXL(inp.files[0]); }
-
+ 
 function readXL(file){
   const r=new FileReader();
   r.onload=ev=>{
@@ -850,7 +886,7 @@ function readXL(file){
   };
   r.readAsArrayBuffer(file);
 }
-
+ 
 /* ═══════════════════════════════════════════════
    METHOD SELECT
 ═══════════════════════════════════════════════ */
@@ -872,7 +908,7 @@ function selMethod(m){
 }
 function switchMethod(m){ selMethod(m); if(S.results.length) rerun(); }
 function drMethodChange(){ selMethod(parseInt(document.querySelector('input[name="drM"]:checked')?.value||1)); }
-
+ 
 /* ═══════════════════════════════════════════════
    PROCESS
 ═══════════════════════════════════════════════ */
@@ -881,10 +917,10 @@ function processData(){
   S.cfg.tolerance = parseFloat(document.getElementById('upTol').value)||0;
   const dStr=document.getElementById('upDate').value;
   if(dStr){ const d=new Date(dStr+'T00:00:00'); S.cfg.reportSerial=d2s(d)+1; updateTopbarDate(d); }
-
+ 
   S.assets=parseRows(S.rawRows);
   if(!S.assets.length){ toast('ไม่พบข้อมูลสินทรัพย์','err'); return; }
-
+ 
   // คำนวณก่อน แล้วค่อย show app (เพื่อให้ currentPage ถูกต้องก่อน renderAll)
   runCalc();
   showApp();   // sets currentPage = 'dash', then goto('dash') triggers renderAll
@@ -894,7 +930,7 @@ function processData(){
   toast(`ประมวลผลสำเร็จ: ${S.assets.length} รายการ`,'ok');
   if(ec>0) setTimeout(()=>toast(`พบ ${ec} รายการผิดพลาด`,'warn'),600);
 }
-
+ 
 function rerun(){
   if(!S.assets.length) return;
   // คำนวณใหม่โดยไม่ render ซ้ำ
@@ -911,7 +947,7 @@ function rerun(){
   toast('คำนวณใหม่ — วิธีที่ '+S.method,'ok');
   trySave();
 }
-
+ 
 function runCalc(){
   S.results = S.assets.map(a=>({...a,...calc(a)}));
   if(S.detList.length){
@@ -922,21 +958,21 @@ function runCalc(){
   }
   // ไม่เรียก renderAll ที่นี่ — ให้ caller จัดการ
 }
-
+ 
 function renderAll(){
   // render ส่วนที่เบาก่อนทันที
   renderKPI();
   renderAlert();
   renderErrBadge();
   populateGrpFilter();
-
+ 
   // render เฉพาะ tab ที่กำลัง active อยู่
   const cur = S.currentPage;
   if(cur === 'err')  renderErr();
   if(cur === 'sum')  renderSum();
   if(cur === 'qual') { renderQualStats(); renderQual(); }
   if(cur === 'det'  && S.detList.length) renderDet();
-
+ 
   // charts หนัก — render เฉพาะตอนอยู่หน้า dashboard และใช้ rAF
   if(cur === 'dash') {
     requestAnimationFrame(() => renderCharts());
@@ -945,7 +981,7 @@ function renderAll(){
     S.chartsDirty = true;
   }
 }
-
+ 
 function showApp(){
   document.getElementById('pageUp').style.display='none';
   document.getElementById('navbar').style.display='flex';
@@ -954,7 +990,7 @@ function showApp(){
   document.getElementById('clearBtn').style.display='flex';
   goto('dash');
 }
-
+ 
 /* ═══════════════════════════════════════════════
    KPI
 ═══════════════════════════════════════════════ */
@@ -980,7 +1016,7 @@ function renderKPI(){
   ].join('');
 }
 function kpi(l,v,s,c){return`<div class="kpi" style="--kc:${c}"><div class="kpi-lbl">${l}</div><div class="kpi-val">${v}</div><div class="kpi-sub">${s}</div></div>`;}
-
+ 
 /* ═══════════════════════════════════════════════
    ALERT
 ═══════════════════════════════════════════════ */
@@ -991,25 +1027,25 @@ function renderAlert(){
   const adj=er.reduce((s,r)=>s+r.adjAbs,0);
   w.innerHTML=`<div class="alert err"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>พบ <strong>${er.length}</strong> รายการผิดพลาด จาก ${S.results.filter(r=>!r.skip).length} รายการที่คำนวณ — มูลค่าต้องปรับ <strong>${fM(adj)}</strong> บาท</span></div>`;
 }
-
+ 
 /* ═══════════════════════════════════════════════
    CHARTS
 ═══════════════════════════════════════════════ */
 function killCharts(){ Object.values(S.charts).forEach(c=>{try{c.destroy();}catch(e){}}); S.charts={}; }
-
+ 
 function renderCharts(){
   killCharts();
   const dark=document.documentElement.getAttribute('data-theme')==='dark';
   const tc=dark?'#8B949E':'#656D76', gc='rgba(128,128,128,.08)';
   const ac=S.results.filter(r=>!r.skip);
   const ok=ac.filter(r=>r.passed).length, er=ac.length-ok;
-
+ 
   S.charts.donut=new Chart(document.getElementById('cDonut'),{
     type:'doughnut',
     data:{labels:['ถูกต้อง','ผิดพลาด'],datasets:[{data:[ok,er],backgroundColor:['#059669','#EF4444'],borderWidth:0,hoverOffset:5}]},
     options:{responsive:true,maintainAspectRatio:false,cutout:'70%',plugins:{legend:{labels:{color:tc,font:{size:11},boxWidth:11},position:'bottom'}}}
   });
-
+ 
   const grps=[...new Set(S.results.map(r=>r.group).filter(Boolean))].sort();
   S.charts.grp=new Chart(document.getElementById('cGroup'),{
     type:'bar',
@@ -1019,7 +1055,7 @@ function renderCharts(){
     ]},
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:tc,font:{size:11},boxWidth:10},position:'bottom'}},scales:{x:{stacked:true,ticks:{color:tc,font:{size:9}},grid:{display:false}},y:{stacked:true,ticks:{color:tc,font:{size:9}},grid:{color:gc}}}}
   });
-
+ 
   const top=S.results.filter(r=>!r.skip&&!r.passed).sort((a,b)=>b.adjAbs-a.adjAbs).slice(0,10);
   S.charts.top=new Chart(document.getElementById('cTop10'),{
     type:'bar',
@@ -1027,13 +1063,13 @@ function renderCharts(){
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:tc,font:{size:9}},grid:{color:gc}},y:{ticks:{color:tc,font:{size:9}},grid:{display:false}}}}
   });
 }
-
+ 
 /* ═══════════════════════════════════════════════
    ERROR TABLE
 ═══════════════════════════════════════════════ */
 let _et;
 function debErr(){ clearTimeout(_et); _et=setTimeout(renderErr,280); }
-
+ 
 function getErrData(){
   const f=S.flt;
   let d=S.results.filter(r=>!r.passed&&!r.skip);
@@ -1047,7 +1083,7 @@ function getErrData(){
   const k=S.sort.key, dr=S.sort.dir;
   return [...d].sort((a,b)=>{let av=a[k]??0,bv=b[k]??0;if(typeof av==='string'){av=av.toLowerCase();bv=String(bv).toLowerCase();}return av<bv?-dr:av>bv?dr:0;});
 }
-
+ 
 function renderErr(){
   S.flt.search=document.getElementById('fSearch').value;
   S.flt.group =document.getElementById('fGroup').value;
@@ -1083,13 +1119,13 @@ function renderErr(){
   renderErrPg(tot,pg);
   renderErrBadge();
 }
-
+ 
 function renderErrBadge(){
   const c=S.results.filter(r=>!r.passed&&!r.skip).length;
   const b=document.getElementById('errBadge');
   b.style.display=c>0?'inline':'none'; b.textContent=c;
 }
-
+ 
 function renderErrPg(tot,pgs){
   const c=document.getElementById('errPg');
   if(pgs<=1){c.innerHTML='';return;}
@@ -1117,7 +1153,7 @@ function populateGrpFilter(){
   const g=[...new Set(S.results.map(r=>r.group).filter(Boolean))].sort();
   document.getElementById('fGroup').innerHTML='<option value="">ทั้งหมด</option>'+g.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
 }
-
+ 
 /* ═══════════════════════════════════════════════
    SUMMARY
 ═══════════════════════════════════════════════ */
@@ -1153,7 +1189,7 @@ function renderSum(){
   </tr>`;
 }
 function fltByGrp(g){document.getElementById('fGroup').value=g;S.flt.group=g;S.page=1;renderErr();goto('err');}
-
+ 
 /* ═══════════════════════════════════════════════
    DETAIL
 ═══════════════════════════════════════════════ */
@@ -1164,7 +1200,7 @@ function openDet(assetNum){
   document.getElementById('detSearch').value='';
   renderDet(); goto('det');
 }
-
+ 
 function doSearch(){
   const q=document.getElementById('detSearch').value.toLowerCase().trim();
   S.detList=q?S.results.filter(r=>(r.assetNum||'').toLowerCase().includes(q)||(r.name||'').toLowerCase().includes(q)):S.results;
@@ -1172,26 +1208,26 @@ function doSearch(){
   if(!S.detList.length){document.getElementById('detContent').innerHTML=`<div class="empty"><h3>ไม่พบรายการ</h3></div>`;updateDetNav();return;}
   renderDet();
 }
-
+ 
 function navDet(d){
   S.detIdx=Math.max(0,Math.min(S.detList.length-1,S.detIdx+d));
   renderDet();
 }
-
+ 
 function updateDetNav(){
   const n=S.detList.length;
   document.getElementById('detCtr').textContent=n>0?`${S.detIdx+1} / ${n}`:'–';
   document.getElementById('prevBtn').disabled=S.detIdx<=0;
   document.getElementById('nextBtn').disabled=S.detIdx>=n-1;
 }
-
+ 
 function renderDet(){
   updateDetNav();
   const r=S.detList[S.detIdx]; if(!r) return;
   const rd=s2d(S.cfg.reportSerial);
   const costBreak=`${fM(r.acqPrice)} + ${fM(r.acqAdj)} + ${fM(r.wud)} + ${fM(r.rev)} = ${fM(r.cost)}`;
   const svc=r.serviceDays||r.serviceLifeYears*365;
-
+ 
   // Calc block
   let calcHtml='';
   if(r.skip){
@@ -1226,14 +1262,14 @@ function renderDet(){
       </div>
     </div>`;
   }
-
+ 
   // Verdict
   let vrd='';
   if(r.skip) vrd=`<div class="verdict skip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg><span>ข้ามการคำนวณ — ${r.skipReason}</span></div>`;
   else if(r.passed) vrd=`<div class="verdict ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>ผ่านการตรวจสอบ — ค่าเสื่อมสะสมถูกต้อง</span></div>`;
   else{const dir=r.diff>0?'ต้องเพิ่มค่าเสื่อมราคา ↑':'ต้องลดค่าเสื่อมราคา ↓';
     vrd=`<div class="verdict err"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>ผิดพลาด — ${dir} <strong>${fM(r.adjAbs)}</strong> บาท</span></div>`;}
-
+ 
   // Timeline
   let tl='';
   if(!r.skip&&r.pctElapsed!=null){
@@ -1245,7 +1281,7 @@ function renderDet(){
       <div style="text-align:center;font-size:10px;color:var(--text3)">${fN(r.daysElapsed)} / ${fN(r.serviceDays)} วัน (${(r.pctElapsed*100).toFixed(1)}%)</div>
     </div>`;
   }
-
+ 
   document.getElementById('detContent').innerHTML=`<div class="det-grid">
     <div class="card">
       <div class="card-hdr"><span class="card-title">ข้อมูลสินทรัพย์</span>
@@ -1279,7 +1315,7 @@ function renderDet(){
     </div>
   </div>`;
 }
-
+ 
 /* ═══════════════════════════════════════════════
    QUALITY
 ═══════════════════════════════════════════════ */
@@ -1296,7 +1332,7 @@ function buildIssues(){
   });
   return issues;
 }
-
+ 
 function renderQualStats(){
   const issues=buildIssues();
   const c=t=>issues.filter(i=>i.issueType===t).length;
@@ -1312,7 +1348,7 @@ function renderQualStats(){
     <div><div class="dq-val" style="color:${c(d.k)>0?d.c:'var(--green-lt)'}">${c(d.k)}</div><div class="dq-lbl">${d.l}</div></div>
   </div>`).join('');
 }
-
+ 
 function renderQual(){
   const issues=buildIssues();
   const q=(document.getElementById('dqSearch').value||'').toLowerCase();
@@ -1332,13 +1368,13 @@ function renderQual(){
       <td style="font-size:11px;color:var(--text2)">${esc(r.issueDetail)}</td>
     </tr>`).join('');
 }
-
+ 
 function resetQual(){
   document.getElementById('dqSearch').value='';
   document.getElementById('dqType').value='';
   renderQual();
 }
-
+ 
 /* ═══════════════════════════════════════════════
    SETTINGS DRAWER
 ═══════════════════════════════════════════════ */
@@ -1364,7 +1400,7 @@ function upDateChange(){
   const d=new Date(v+'T00:00:00'),s=d2s(d)+1;
   document.getElementById('upDateHint').textContent=`${dTH(d)} | Serial: ${s}`;
 }
-
+ 
 function applySettings(){
   const v=document.getElementById('drDate').value;
   if(v){const d=new Date(v+'T00:00:00');S.cfg.reportSerial=d2s(d)+1;updateTopbarDate(d);}
@@ -1375,7 +1411,7 @@ function applySettings(){
   closeDrawer();
   if(S.results.length) rerun();
 }
-
+ 
 function updateTopbarDate(d){
   document.getElementById('tbDate').textContent=`${String(d.getDate()).padStart(2,'0')}/${String(d.getMonth()+1).padStart(2,'0')}/${d.getFullYear()}`;
   // sync drawer date
@@ -1384,7 +1420,7 @@ function updateTopbarDate(d){
   document.getElementById('upDate').value=ds;
   drDateChange(); upDateChange();
 }
-
+ 
 /* ═══════════════════════════════════════════════
    NAVIGATION
 ═══════════════════════════════════════════════ */
@@ -1393,9 +1429,9 @@ function goto(p){
   const navs ={dash:'nDash',err:'nErr',sum:'nSum',det:'nDet',qual:'nQual'};
   Object.entries(pages).forEach(([k,id])=>{ document.getElementById(id).classList.toggle('on',k===p); });
   Object.entries(navs ).forEach(([k,id])=>{ document.getElementById(id).classList.toggle('on',k===p); });
-
+ 
   S.currentPage = p;
-
+ 
   // lazy render: วาดเฉพาะ tab ที่เพิ่งเปิด
   if(!S.results.length) return;
   if(p==='dash') {
@@ -1409,7 +1445,7 @@ function goto(p){
     renderDet();
   }
 }
-
+ 
 /* ═══════════════════════════════════════════════
    THEME
 ═══════════════════════════════════════════════ */
@@ -1421,7 +1457,7 @@ function toggleTheme(){
   localStorage.setItem('fa_theme',nxt);
   if(S.results.length) setTimeout(renderCharts,50);
 }
-
+ 
 /* ═══════════════════════════════════════════════
    EXPORTS
 ═══════════════════════════════════════════════ */
@@ -1432,7 +1468,7 @@ function mkWB(...sheets){
 }
 function xlD(d){return d?dCE(d):'–';}
 function isoD(){return new Date().toISOString().slice(0,10);}
-
+ 
 function exportDashXL(){
   const grps=[...new Set(S.results.map(r=>r.group).filter(Boolean))].sort();
   const rows=[['กลุ่มสินทรัพย์','รวม','ถูกต้อง','ผิดพลาด','ข้าม','%ผิดพลาด','ราคาทุนรวม','ค่าเสื่อม(ระบบ)',`ค่าเสื่อม(วิธี${S.method})`,'ส่วนต่าง','ต้องปรับ']];
@@ -1445,7 +1481,7 @@ function exportDashXL(){
   XLSX.writeFile(mkWB(['Dashboard',rows]),`FA_Dashboard_${isoD()}.xlsx`);
   toast('Export Dashboard Excel สำเร็จ','ok');
 }
-
+ 
 function exportErrXL(){
   const data=getErrData();
   const rows=[['#','รหัสสินทรัพย์','ชื่อ','กลุ่ม','Value Model','วันที่ได้มา','Acq.Price','Acq.Adj','WriteUp/Down','Revaluation','ราคาทุน','อายุ(ปี)',`ค่าเสื่อม/วัน(วิธี${S.method})`,'วันที่ผ่านมา','ค่าเสื่อม(ระบบ)',`ค่าเสื่อม(คำนวณ)`,'ส่วนต่าง','ต้องปรับ','ทิศทาง','หมดอายุ']];
@@ -1453,7 +1489,7 @@ function exportErrXL(){
   XLSX.writeFile(mkWB(['รายการผิดพลาด',rows]),`FA_Errors_${isoD()}.xlsx`);
   toast('Export Excel รายการผิดพลาดสำเร็จ','ok');
 }
-
+ 
 function exportErrCSV(){
   const data=getErrData();
   const rows=[['รหัสสินทรัพย์','ชื่อ','กลุ่ม','ราคาทุน','ค่าเสื่อม(ระบบ)','ค่าเสื่อม(คำนวณ)','ส่วนต่าง','ต้องปรับ','ทิศทาง']];
@@ -1463,7 +1499,7 @@ function exportErrCSV(){
   a.download=`FA_Errors_${isoD()}.csv`;a.click();
   toast('Export CSV สำเร็จ','ok');
 }
-
+ 
 function exportSumXL(){
   const grps=[...new Set(S.results.map(r=>r.group).filter(Boolean))].sort();
   const rows=[['กลุ่มสินทรัพย์','รวม','ถูกต้อง','ผิดพลาด','ข้าม','%ผิดพลาด','ราคาทุนรวม','ค่าเสื่อม(ระบบ)',`ค่าเสื่อม(วิธี${S.method})`,'ส่วนต่าง','ต้องปรับ']];
@@ -1476,7 +1512,7 @@ function exportSumXL(){
   XLSX.writeFile(mkWB(['สรุปตามกลุ่ม',rows]),`FA_Summary_${isoD()}.xlsx`);
   toast('Export Summary Excel สำเร็จ','ok');
 }
-
+ 
 function exportDetXL(){
   if(!S.detList.length){toast('ไม่มีข้อมูล','warn');return;}
   const rows=[['รหัสสินทรัพย์','ชื่อ','กลุ่ม','Value Model','วันที่ได้มา','Acq.Price','Acq.Adj','WriteUp/Down','Revaluation','ราคาทุน','อายุ(ปี)',`ค่าเสื่อม/วัน(วิธี${S.method})`,'วันที่ผ่านมา','ค่าเสื่อม(ระบบ)',`ค่าเสื่อม(คำนวณ)`,'ส่วนต่าง','ผล','หมายเหตุ']];
@@ -1484,7 +1520,7 @@ function exportDetXL(){
   XLSX.writeFile(mkWB(['รายละเอียด',rows]),`FA_Detail_${isoD()}.xlsx`);
   toast('Export Detail Excel สำเร็จ','ok');
 }
-
+ 
 function exportQualXL(){
   const d=buildIssues();
   const rows=[['รหัสสินทรัพย์','ชื่อ','กลุ่ม','Value Model','ราคาทุน','อายุ(ปี)','ประเภทปัญหา','รายละเอียด']];
@@ -1492,7 +1528,7 @@ function exportQualXL(){
   XLSX.writeFile(mkWB(['คุณภาพข้อมูล',rows]),`FA_Quality_${isoD()}.xlsx`);
   toast('Export Quality Excel สำเร็จ','ok');
 }
-
+ 
 /* ═══════════════════════════════════════════════
    AUDIT / SAVE / RESTORE
 ═══════════════════════════════════════════════ */
@@ -1504,11 +1540,11 @@ function addLog(){
   document.getElementById('auditTs').textContent='ล่าสุด: '+now;
   document.getElementById('auditBody').innerHTML=S.log.slice(0,8).map(l=>`<div class="audit-line">${l}</div>`).join('');
 }
-
+ 
 function trySave(){
   try{localStorage.setItem('fa_v3',JSON.stringify({rawRows:S.rawRows,method:S.method,cfg:S.cfg,ts:new Date().toISOString()}));}catch(e){}
 }
-
+ 
 function tryRestore(){
   try{
     const d=JSON.parse(localStorage.getItem('fa_v3'));
@@ -1522,7 +1558,7 @@ function tryRestore(){
     toast(`โหลดข้อมูลที่บันทึกไว้: ${S.assets.length} รายการ`,'ok');
   }catch(e){localStorage.removeItem('fa_v3');}
 }
-
+ 
 function clearData(){
   if(!confirm('ล้างข้อมูลทั้งหมดและเริ่มต้นใหม่?'))return;
   localStorage.removeItem('fa_v3');
@@ -1545,7 +1581,7 @@ function clearData(){
   document.getElementById('runBtn').disabled=true;
   toast('ล้างข้อมูลแล้ว','ok');
 }
-
+ 
 /* ═══════════════════════════════════════════════
    TOAST
 ═══════════════════════════════════════════════ */
@@ -1557,14 +1593,14 @@ function toast(msg,type='ok'){
   document.getElementById('toastWrap').appendChild(el);
   setTimeout(()=>{el.classList.add('out');setTimeout(()=>el.remove(),250);},3000);
 }
-
+ 
 /* ═══════════════════════════════════════════════
    FORMAT
 ═══════════════════════════════════════════════ */
 function fN(n){return Number(n||0).toLocaleString('th-TH');}
 function fM(n){return Number(n||0).toLocaleString('th-TH',{minimumFractionDigits:2,maximumFractionDigits:2});}
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-
+ 
 /* ═══════════════════════════════════════════════
    KEYBOARD
 ═══════════════════════════════════════════════ */
@@ -1582,11 +1618,11 @@ document.addEventListener('keydown',e=>{
     if(e.key==='ArrowRight')navDet(1);
   }
 });
-
+ 
 /* ═══════════════════════════════════════════════
    INIT
 ═══════════════════════════════════════════════ */
-
+ 
 /* lastEndOfMonth: หาวันสิ้นเดือนย้อนหลังที่ใกล้ที่สุด
    ถ้าวันนี้คือสิ้นเดือนพอดี → ใช้วันนี้เลย
    ถ้าไม่ → ย้อนกลับไปสิ้นเดือนที่แล้ว
@@ -1604,7 +1640,7 @@ function lastEndOfMonth() {
   // ยังไม่ถึงสิ้นเดือน → ใช้สิ้นเดือนที่แล้ว
   return new Date(Date.UTC(y, m, 0));
 }
-
+ 
 (function(){
   const t=localStorage.getItem('fa_theme');
   if(t){
@@ -1613,14 +1649,17 @@ function lastEndOfMonth() {
     document.getElementById('iMoon').style.display=t==='light'?'':'none';
   }
   selMethod(1);
-
+ 
   // ── ตั้งวันรายงาน = สิ้นเดือนย้อนหลังที่ใกล้ที่สุด ──
   const eom = lastEndOfMonth();
   S.cfg.reportSerial = d2s(eom) + 1;
   updateTopbarDate(eom);
-
+ 
   tryRestore();
 })();
 </script>
 </body>
 </html>
+ 
+
+
